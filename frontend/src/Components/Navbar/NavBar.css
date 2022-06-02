@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar-main{
+    position: sticky;
+}
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background-image:linear-gradient(to right,black,rgb(68, 93, 130),black,black);
+    /* box-shadow: 3px 0px 50px 1px rgb(68, 93, 130); */
+}
+.fade{
+    height: 20px;
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgb(112, 136, 171),transparent);
+    position: absolute;
+}
+.navbar-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+}
+.navbar-li {
+    font-size: 1.2rem;
+    font-family: 'Odibee Sans', cursive;
+    margin: 10px;
+    z-index: 10;
+    letter-spacing: 1.5px;
+}
+.navbar-li:hover{
+    color: rgb(68, 93, 130);
+    text-decoration: underline;
+}
+
+.navbar-img {
+    position: relative;
+    top: 25px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius:100%;
+    z-index: 2;
+}
+.navbar-img:hover{
+    animation: animate 1s forwards;
+}
+@keyframes animate{
+    100%{
+        top:40px;
+        height: 120px;
+        width: 120px;
+    }
+}
+.vl{
+    border-left: 2px solid white;
+    height: 20px;
+    width: 10px;
+    position: relative;
+    top: 10px;
+}
+.xyz{
+    height: 200vh;
+}
