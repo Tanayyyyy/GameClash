@@ -4,7 +4,7 @@ import logo from "./GamersPort.gif";
 import {SportsGolfOutlined,SportsBaseballOutlined,SportsMotorsportsOutlined,HomeOutlined, PhoneOutlined,VideogameAssetOutlined,GamesOutlined,SportsEsportsOutlined,CasinoOutlined,SportsFootballOutlined,SportsHandballOutlined,ToysOutlined} from '@material-ui/icons'
 import { useState } from "react";
 export default function Login(){
-    var [name,setName] = React.useState("");
+    var [name,setName] = useState("");
     function handleChange(event){
         setName(event.target.value);
     }
@@ -561,11 +561,11 @@ export default function Login(){
             <form method="post" className="login-form" ></form>
             <h1>Hello! {name}</h1>
             <h1>Please LogIn!!</h1>
-            <input type="username" onChange={handleChange} class="form-control top" name="userName" placeholder="User Name" required autofocus />
-      <input type="email" id="inputEmail" class="form-control mid" name="email" placeholder="Email address" required />
-      <input type="password" id="inputPassword" class="form-control bottom"  name="password" placeholder="Password" required />
-      <button class="login-btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
+            <input type="username" onChange={handleChange} class="top" name="userName" placeholder="User Name" required autoFocus />
+      <input  type="email" id="inputEmail" class="mid" name="email" placeholder="Email address" required />
+      <input type="password" id="inputPassword" class="bottom"  name="password" placeholder="Password" required />
+      <button class="login-btn" type="submit">Sign in</button>
+      <p>&copy; 2022-2023</p>
         </section>
         </div>
     );

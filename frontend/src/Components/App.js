@@ -6,8 +6,8 @@ import NavBar from "./Navbar/NavBar";
 function App(){
     return (
         <div>
-            <NavBar/>
-            {/* <Login/> */}
+            {/* <NavBar/> */}
+            <Login/>
         </div>
     );
 }
